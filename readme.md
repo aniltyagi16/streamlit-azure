@@ -10,9 +10,10 @@ streamlit run main.py
 
 
 #docker push to acr
-az acr login -n resource name
+az acr login -n streamitAppContainer
 docker tag streamlit-azure-streamlit streamlit3.azurecr.io/streamlit_image
 docker push streamlit3.azurecr.io/streamlit_image
+streamitappcontainer.azurecr.io/samples/hello-world
 
 
 #to automate github to ACR
